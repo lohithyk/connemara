@@ -138,3 +138,19 @@ function updateLoveTimer() {
 
 updateLoveTimer();
 setInterval(updateLoveTimer, 1000);
+
+
+const bgSound = document.getElementById('bgSound');
+const soundToggle = document.getElementById('soundToggle');
+let soundOn = false;
+
+soundToggle.addEventListener('click', () => {
+  if (soundOn) {
+    bgSound.pause();
+    soundToggle.textContent = '🌊';
+  } else {
+    bgSound.play().catch(() => {}); // ignore autoplay block
+    soundToggle.textContent = '🔊';
+  }
+  soundOn = !soundOn;
+});

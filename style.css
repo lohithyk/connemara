@@ -149,3 +149,70 @@
     .title { font-size: 1.45rem; }
   }
   
+  /* Shooting star sparkles inside each note */
+.note {
+  position: relative;
+  overflow: hidden; /* keep stars inside the card */
+}
+
+/* Create tiny glowing particles */
+.note::after,
+.note::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 
+    20px 30px rgba(255,255,255,0.8),
+    80px 60px rgba(255,255,255,0.4),
+    140px 100px rgba(255,255,255,0.6),
+    200px 50px rgba(255,255,255,0.8),
+    260px 120px rgba(255,255,255,0.5),
+    320px 80px rgba(255,255,255,0.7);
+  animation: shootStars 6s linear infinite;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.note::before {
+  animation-delay: 3s; /* offset for variety */
+  opacity: 0.5;
+}
+
+/* Shooting / twinkling animation */
+@keyframes shootStars {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.4;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(200px, 150px) scale(0.9);
+    opacity: 0.3;
+  }
+}
+
+/* Sound button */
+.sound-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  z-index: 10;
+}
+.sound-toggle:hover {
+  background: rgba(255,255,255,0.2);
+}
