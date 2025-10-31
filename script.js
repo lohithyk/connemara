@@ -106,3 +106,35 @@ function escapeHtml(s) {
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;');
 }
+
+
+// === Love Timer ===
+function updateLoveTimer() {
+  const startDate = new Date("2023-03-01T00:00:00");
+  const now = new Date();
+
+  let years = now.getFullYear() - startDate.getFullYear();
+  let months = now.getMonth() - startDate.getMonth();
+  let days = now.getDate() - startDate.getDate();
+
+  if (days < 0) {
+    const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+    days += prevMonth.getDate();
+    months--;
+  }
+
+  if (months < 0) {
+    months += 12;
+    years--;
+  }
+
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  const seconds = now.getSeconds().toString().padStart(2, "0");
+
+  const timerText = `${years} years ${months} months ${days} days - ${hours}:${minutes}:${seconds} together 🤎`;
+  document.getElementById("loveTimer").textContent = timerText;
+}
+
+updateLoveTimer();
+setInterval(updateLoveTimer, 1000);
