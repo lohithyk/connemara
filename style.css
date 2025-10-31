@@ -198,21 +198,26 @@
   }
 }
 
-/* Sound button */
+.footer-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .sound-toggle {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
   background: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.2);
   border-radius: 50%;
-  padding: 10px;
-  font-size: 1.2rem;
+  padding: 6px 10px;
+  font-size: 1rem;
   color: #fff;
-  backdrop-filter: blur(6px);
   cursor: pointer;
-  z-index: 10;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s ease, transform 0.2s ease;
 }
+
 .sound-toggle:hover {
   background: rgba(255,255,255,0.2);
+  transform: scale(1.08);
 }

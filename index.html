@@ -31,12 +31,15 @@
         <section id="timeline" class="timeline" aria-live="polite"></section>
 
         <footer class="footer">
-            <small id="loveTimer"></small>
+            <div class="footer-inner">
+                <small id="loveTimer"></small>
+                <audio id="bgSound" src="assets/The-Love-Bug-Has-Bitten.mp3" loop></audio>
+                <button id="soundToggle" class="sound-toggle" title="Toggle ocean sound">🌊</button>
+            </div>
         </footer>
     </main>
 
-    <audio id="bgSound" src="assets/The-Love-Bug-Has-Bitten.mp3" loop></audio>
-    <button id="soundToggle" class="sound-toggle" title="Toggle ocean sound">🌊</button>
+
 
     <script src="notes.js"></script>
     <script src="script.js"></script>
