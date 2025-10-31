@@ -202,22 +202,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.sound-toggle {
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 50%;
+.music-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
   padding: 6px 10px;
-  font-size: 1rem;
-  color: #fff;
+  border-radius: 8px;
   cursor: pointer;
+  user-select: none;
   backdrop-filter: blur(4px);
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: all 0.25s ease;
 }
 
-.sound-toggle:hover {
-  background: rgba(255,255,255,0.2);
-  transform: scale(1.08);
+.music-toggle:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+.music-toggle input {
+  display: none;
+}
+
+.music-toggle strong {
+  color: var(--accent);
+  font-weight: 500;
 }
