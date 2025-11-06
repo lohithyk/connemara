@@ -1,23 +1,23 @@
 const notes = [
     {
       title: "The First Note",
-      description: "This is where it all began — a simple line that meant everything.",
-      date: "Nov 11, 2021, 9:15 PM"
+      description: "Lite ah stalk panikaren.. Just checking in to make sure everything’s working fine for you, babe!",
+      date: "Oct 05, 2025, 9:15 PM"
     },
     {
-      title: "That Smile",
-      description: "When you smiled that day, I swear even the stars looked jealous.",
-      date: "Feb 14, 2022, 7:03 PM"
+      title: "Thank You Gorgeous",
+      description: "Tqsm thangamey I loved every gift you gave love you so muchhhh",
+      date: "Oct 26, 2025, 9:23 PM"
     },
     {
-      title: "Late-Night Texts",
-      description: "I still reread them sometimes. You sounded like a lullaby.",
-      date: "Aug 19, 2023, 12:04 AM"
+      title: "Christmas Wish List",
+      description: "10000 kisses 100000 hugs 1000000000 smoochies.",
+      date: "Oct 27, 2025, 8:22 PM"
     },
     {
-      title: "Our Walk by the Sea",
-      description: "The waves echoed our laughter, and time forgot to move.",
-      date: "May 8, 2022, 6:47 PM"
+      title: "Happy Birthday Ayisha Kutty!",
+      description: "Happy Birthday, my beautiful Ayisha chellom. You’ll always be my everything and my Fallon O’Neil. 🤎🎂",
+      date: "Nov 06, 2025, 12:10 AM"
     }
   ];
   
