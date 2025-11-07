@@ -18,6 +18,11 @@ const notes = [
       title: "Happy Birthday Ayisha Kutty!",
       description: "Happy Birthday, my beautiful Ayisha chellom. You’ll always be my everything and my Fallon O’Neil. 🤎🎂",
       date: "Nov 06, 2025, 12:10 AM"
+    },
+    {
+      title: "Missing You",
+      description: "Hi paps, I miss you konjam adhigama. Climate nalla iruku inga I want to meet you badly, sekram meet panalam beach ponum enaku unkuda yepponu sollu polam.",
+      date: "Nov 07, 2025, 02:10 PM"
     }
   ];
   
