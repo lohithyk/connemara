@@ -142,7 +142,7 @@ setInterval(updateLoveTimer, 1000);
 
 const soundToggle = document.getElementById("soundToggle");
 const toggleText = document.querySelector(".toggle-text strong");
-const audio = new Audio("assets/The-Love-Bug-Has-Bitten.mp3");
+const audio = new Audio("assets/Relaxing-Waves.mp3");
 audio.loop = true;
 audio.volume = 0.4;
 
