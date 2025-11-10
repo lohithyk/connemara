@@ -23,6 +23,11 @@ const notes = [
       title: "Missing You",
       description: "Hi paps, I miss you konjam adhigama. Climate nalla iruku inga I want to meet you badly, sekram meet panalam beach ponum enaku unkuda yepponu sollu polam.",
       date: "Nov 07, 2025, 02:10 PM"
+    },
+    {
+      title: "Reminder!",
+      description: "Hi paps, I hope everything is fine for you there babe. I'm just thinking about you first day unaku yappadi iruku therila but I'm so nervous, Mudinjathum unna paka odii vanthudran thangamey",
+      date: "Nov 10, 2025, 05:08 PM"
     }
   ];
   
